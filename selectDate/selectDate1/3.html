@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title></title>
+    <script src="dev/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="css/mobiscroll.custom-2.5.2.min_my.css"/>
+	<script src="js/mobiscroll.custom-2.5.2.min.js"></script>
+	<script src="dev/js/mobiscroll.datetime-2.5.1-zh.js"></script>
+	<!-- E 可根据自己喜好引入样式风格文件 -->
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Mobiscroll精简实例</h1>
+    </div>
+    <div class="content">
+		<div class="demos">
+			<label for="appDateTime">日期时间</label>
+			<input type="text" name="appDateTime" id="appDateTime" />
+		</div>
+	</div>
+	<script>
+		var opt = {
+			preset:'datetime',//日期
+			theme:'android-ics light',//皮肤样式
+			display:'bubble',//显示方式
+			lang:'zh',
+			mode:'scroller',//日期选择模式
+			dateFormat:'yy-mm-dd', // 日期格式
+			setText:'确定',
+			cancelText:'取消',
+			showNow:true,
+		    nowText:'今天',
+			dateOrder:'yymmdd', //面板中日期排列格式
+			startYear:(new Date()).getFullYear(),
+			endYear:2050 //结束年份
+		};
+
+		$('#appDateTime').mobiscroll(opt);
+	</script>
+</body>
+</html>

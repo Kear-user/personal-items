@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thisPeriod_Estimate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="xx网站">
+    <meta name="keywords" content="xx网站">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon_logo.png" />
+    <link rel="stylesheet" href="css/share.css" />
+	<link rel="stylesheet" href="css/mobiscroll.custom-2.5.2.min_my.css"/>
+    <link rel="stylesheet" href="css/thisPeriod_Estimate.css" />
+</head>
+<body>
+	<div class="set">
+		<div class="topSelectTime ">
+			<a href=""  id="appDateTime">
+				<img src="images/shijian.png" class="shijian">
+				<span class="timeText">开始时间</span>
+			</a>
+			<a href="">
+				<img src="images/shuaixuan.png" class="shuaixuan">
+			</a>
+		</div>
+
+		<div class="set_column">
+			<img src="images/XM.png" class="icon">
+			<div class="set_columnContent">
+				<div class="firstColumnText">
+					<span class="leftText"> 38.88</span>
+					<span class="rightText"> 预估返现</span>
+				</div>
+				<div class="secondColumnText">
+					<span class="leftText"> 123456789</span>
+					<span class="rightText"> 2017-10-28</span>
+				</div>
+			</div>
+		</div>
+		<div class="set_column">
+			<img src="images/XM.png" class="icon">
+			<div class="set_columnContent">
+				<div class="firstColumnText">
+					<span class="leftText"> 38.88</span>
+					<span class="rightText"> 预估返现</span>
+				</div>
+				<div class="secondColumnText">
+					<span class="leftText"> 123456789</span>
+					<span class="rightText"> 2017-10-28</span>
+				</div>
+			</div>
+		</div>
+		<div class="set_column">
+			<img src="images/XM.png" class="icon">
+			<div class="set_columnContent">
+				<div class="firstColumnText">
+					<span class="leftText"> 38.88</span>
+					<span class="rightText"> 预估返现</span>
+				</div>
+				<div class="secondColumnText">
+					<span class="leftText"> 123456789</span>
+					<span class="rightText"> 2017-10-28</span>
+				</div>
+			</div>
+		</div>
+		<div class="set_column">
+			<img src="images/XM.png" class="icon">
+			<div class="set_columnContent">
+				<div class="firstColumnText">
+					<span class="leftText"> 38.88</span>
+					<span class="rightText"> 预估返现</span>
+				</div>
+				<div class="secondColumnText">
+					<span class="leftText"> 123456789</span>
+					<span class="rightText"> 2017-10-28</span>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<script type="text/javascript" src="js/share.js"></script>
+  	<script src="js/mobiscroll.custom-2.5.2.min.js"></script>
+	<script src="js/mobiscroll.datetime-2.5.1-zh.js"></script>
+	<!-- E 可根据自己喜好引入样式风格文件 -->
+	<script>
+		var opt = {
+			preset:'datetime',//日期
+			theme:'android-ics light',//皮肤样式
+			display:'bubble',//显示方式
+			lang:'zh',
+			mode:'scroller',//日期选择模式
+			dateFormat:'yy-mm-dd', // 日期格式
+			setText:'确定',
+			cancelText:'取消',
+			showNow:true,
+		    nowText:'今天',
+			dateOrder:'yymmdd', //面板中日期排列格式
+			startYear:(new Date()).getFullYear(),
+			endYear:2050 //结束年份
+		};
+		$('#appDateTime').mobiscroll(opt);
+	</script>
+</body>
+</html>
