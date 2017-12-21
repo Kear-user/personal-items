@@ -1,0 +1,433 @@
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+  max-width: 1366px;
+}
+body {
+    font: 15px/22px Roboto,Arial,sans-serif;
+    background: #fafafa;
+    color: #313131;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ul{
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+p{
+  margin: 15px 0;
+  line-height: 22px;
+}
+
+/*@media 768px-992px*/
+@media(min-width: 769px) and (max-width: 992px)  {  
+    .chanceCt{
+      width: 700px !important;
+      height: auto !important;
+    }
+    .chanceCt h2{
+      font-size: 28px !important;
+    }
+    .joinCt{
+      width: 700px !important;
+      height: auto !important;
+    }
+    .joinCt ul{
+      height: auto !important;
+    }
+    .joinCt ul:nth-child(3) li{
+      clear: left ;
+    }
+    .joinCt h2{
+      font-size: 28px !important;
+    }
+    .joinList li{
+      width: 50% !important;
+      padding: 20px 0;
+    }
+    .getPrizeCt {
+      width: 700px !important;
+    }
+    .getPrizeCt header h2{
+      font-size: 28px !important;
+    }
+    .getPrizeList .listTitle{
+      font-size: 20px !important;
+    }
+    .startCt{
+      width: 700px !important;
+    }
+    .conditionCt {
+      width: 700px !important;
+    }
+}
+  /*@media ≤768px*/
+@media(max-width: 768px) {  
+  .chanceCt{
+    width: 450px !important;
+    height: auto;
+  }
+  .chanceCt h2{
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .joinCt{
+    width: 450px !important;
+    height: auto !important;
+  }
+  .joinCt h2{
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .joinCt ul{
+    height: auto !important;
+  }
+  .joinCt li{
+    clear: both !important;
+    width: 100% !important;
+  }
+  .joinList li{
+    width: 100%;
+    padding: 10px 0;
+  }
+  .getPrizeCt {
+    width: 450px !important;
+    height: auto;
+  }
+  .getPrizeCt header h2{
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .getPrizeCt li{
+    clear: both;
+  }
+  .getPrizeList ul{
+    left: 100px;
+  }
+ .getPrizeList .listTitle{
+    font-size: 20px !important;
+  }
+  .startCt{
+    width: 450px !important;
+    left: 70px;
+    height: 170px !important;
+  }
+  .startCt .startActions{
+    left: -180px;
+    top: 30px;
+  }
+  .conditionCt {
+    height: auto;
+    width: 450px !important;
+  }
+}
+
+.out-wrp{
+  position: relative;
+  height: auto;
+}
+/*banner*/
+.bannerImg{
+  position: relative;
+}
+.bannerImgBg{
+  /*background: url(../images/banner.jpg) no-repeat center/cover;
+  background-size: 100%;  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+}
+.bannerImgBg img{
+  width: 100%;
+  height:100%;
+}
+/*不管怎样......*/
+.chancePalte{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  border: 0 solid #cfcfcf;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  margin-top: -6px;
+}
+.chanceCt{
+  width: 980px;
+  height: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+.chanceCt h2{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.leftAlign{
+  text-align: left;
+}
+.chanceCt ul{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-left: 20px;
+} 
+.chanceCt li{
+   margin: 10px 0;
+}    
+.chanceCt ul li:before{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #ecb540;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 5px;
+  margin-left: -20px; 
+}
+/*参与方式*/
+.joinPlate{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+  background: #fff;
+  border: 0 solid #cfcfcf;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  padding: 50px 0;
+}
+.joinCt{
+  width: 980px;
+  height: 310px;
+  margin: 0 auto;
+}
+.joinCt h2{
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.joinList{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.joinList ul{
+  width: 100%;
+  height: 155px;
+  overflow: hidden;
+}
+.joinList li{
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+.squareBox{
+  width: 65px;
+  height: 100%;
+  padding: 10px 0;
+  border-right: 1px dashed #cfcfcf;
+  float: left;
+}
+.square{
+  height: 65px;
+  background:#f0f0f0;
+  color: #c00;
+  font:400 26px/65px 'Microsoft Yahei' !important;
+  text-align: center;
+}
+.cueBox{
+  height: 100%;
+  width: 130px;
+  padding-left: 80px;
+}
+.cueBox div{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.cueBox p{
+  font-size: 13px;
+  margin: 0;
+  line-height: 20px;
+}
+.cueBox span{
+  color: #c00;
+}
+/*准备好得奖了吗*/
+.getPrizePlate{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+  background: url("https://tickmill.com/wp-content/uploads/2017/11/bg-prizes-section.png") no-repeat 50% 50%/cover;
+  border: 0 solid #cfcfcf;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  padding: 50px 0;
+}
+.getPrizeCt{
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+.getPrizeCt header h2{
+  margin: 0;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.getPrizeCt header p{
+  text-align: center;
+}
+.getPrizeList{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.getPrizeList ul{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.getPrizeList ul li{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+.getPrizeList .listTitle{
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.getPrizeList .listImg{
+  width:100%;
+  height: 130px;
+  margin: 40px 0 10px 0;
+}
+.getPrizeList .listImg img{
+  height: 98px;
+}
+.getPrizeList ul li p{
+  color: #606060;
+}
+/*开始入口*/
+.startPlate{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  border: 0 solid #cfcfcf;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  margin-top: -1px;
+}
+.startCt{
+  position: relative;
+  width: 980px;
+  height: 70px;
+  margin: 0 auto;
+  padding:50px 0;
+  line-height: 30px;
+}
+.startCt .startMatchTittle{
+  font-size: 16px;
+  color: #303030;
+  float: left;
+}
+.startMatchTittle h3{
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom:10px;
+  color: #222;
+}
+.startCt .startActions{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  float: right;
+  display: inline-block;
+}
+.startActions .startBt{
+  background: #62bb00;
+  position: relative;
+  display: inline-block;
+  width: 270px;
+  height: 50px;
+  line-height: 50px;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+.startActions .tipText{
+  font-size: 13px;
+  line-height: 30px;
+}
+.conditionPlate{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+  border: 0 solid #cfcfcf;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  margin-top: -1px;
+}
+.conditionCt{
+  position: relative;
+  width: 980px;
+  height: 70px;
+  margin: 0 auto;
+  padding:50px 0;
+  line-height: 30px;
+}
+.conditionText{
+  position: relative;
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #d8d8d8;
+  font:400 26px/70px 'Microsoft Yahei' ! important;
+  padding: 6px 0;
+}
+.conditionText h3{
+  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+  color: #222;  
+  width: 500px;
+  padding-left: 25px;
+}
+.conditionText img{
+  height: 20px;
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: -42px;
+  cursor: pointer;
+  right: 30px;
+}
